@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "MyFont";
+  src: local("MyFont"), url(./Emulogic-zrEw.ttf) format("truetype");
+}
+
+.ModalDiv {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 2;
+}
+
+.Modal {
+  width: 75vw;
+  height: 75vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: rgb(38, 69, 241);
+  z-index: 3;
+  border-radius: 25px;
+  border: 25px solid transparent;
+  border-image: url(./border.svg) 25 stretch;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.m1_span {
+  background-color: rgb(38, 69, 241);
+  color: white;
+  font-family: "MyFont";
+  font-size: 1vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

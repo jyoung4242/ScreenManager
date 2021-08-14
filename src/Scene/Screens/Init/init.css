@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "MyFont";
+  src: local("MyFont"), url(./Emulogic-zrEw.ttf) format("truetype");
+}
+.initScreen {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: black;
+}
+
+.blank {
+  background-color: black;
+  color: white;
+  font-family: "MyFont";
+  font-size: 1vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blink_me {
+  animation: blinker 1.25s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
